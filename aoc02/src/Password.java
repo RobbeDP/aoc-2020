@@ -4,9 +4,9 @@ public class Password {
     public char character;
     public String password;
 
-    public Password(int loBound, int hiBound, char character, String password) {
-        this.lower = loBound;
-        this.higher = hiBound;
+    public Password(int lower, int higher, char character, String password) {
+        this.lower = lower;
+        this.higher = higher;
         this.character = character;
         this.password = password;
     }
