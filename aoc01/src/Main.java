@@ -20,7 +20,7 @@ public class Main {
     private static List<Integer> readNumbers() throws IOException {
         List<Integer> numbers = new ArrayList<>();
 
-        URL url = Task1.class.getResource("input");
+        URL url = Main.class.getResource("input");
         File file = new File(url.getPath());
         BufferedReader br = new BufferedReader(new FileReader(file));
 
