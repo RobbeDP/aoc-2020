@@ -14,13 +14,13 @@ public class Main {
         System.out.println("Result task 1: " + task1.findNumber(numbers));
 
         Task2 task2 = new Task2();
-        System.out.println("Result task 1: " + task2.findNumber(numbers));
+        System.out.println("Result task 2: " + task2.findNumber(numbers));
     }
 
     private static List<Integer> readNumbers() throws IOException {
         List<Integer> numbers = new ArrayList<>();
 
-        URL url = Task1.class.getResource("input");
+        URL url = Main.class.getResource("input");
         File file = new File(url.getPath());
         BufferedReader br = new BufferedReader(new FileReader(file));
 
