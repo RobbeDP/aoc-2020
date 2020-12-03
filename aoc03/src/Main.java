@@ -11,10 +11,11 @@ public class Main {
         List<String> forest = readForest();
 
         Task1 task1 = new Task1();
-        System.out.println("Result task 1: " + task1.countTrees(forest));
+        System.out.println("Result task 1: " + task1.countTrees(forest, 3, 1));
 
         Task2 task2 = new Task2();
-        System.out.println("Result task 2: " + task2.countTrees(forest));
+        int[][] slopes = {{1, 1}, {3, 1}, {5, 1}, {7, 1}, {1, 2}};
+        System.out.println("Result task 2: " + task2.countTrees(forest, slopes));
     }
 
     public static List<String> readForest() throws IOException {
