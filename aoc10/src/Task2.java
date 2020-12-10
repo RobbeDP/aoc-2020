@@ -16,6 +16,8 @@ public class Task2 {
             for (int j = i - 1; j >= 0; j--) {
                 if (joltagesCopy.get(i) - joltagesCopy.get(j) <= 3) {
                     arrangements[i] += arrangements[j];
+                } else {
+                    break;
                 }
             }
         }
