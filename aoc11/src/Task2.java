@@ -35,7 +35,7 @@ public class Task2 {
             }
         }
 
-        return countOccupied(seats);
+        return new Task1().countOccupied(seats);
     }
 
     public int countAdjacent(List<List<Character>> seats, int row, int col) {
@@ -56,17 +56,6 @@ public class Task2 {
                     adjRow += dir[0];
                     adjCol += dir[1];
                 }
-            }
-        }
-
-        return count;
-    }
-
-    public int countOccupied(List<List<Character>> seats) {
-        int count = 0;
-        for (List<Character> row : seats) {
-            for (Character seat : row) {
-                if (seat == '#') count++;
             }
         }
 
