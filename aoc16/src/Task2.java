@@ -11,7 +11,7 @@ public class Task2 {
 
         // Loop over columns
         long result = 1;
-        for (int t = 0; t < notes.getFields().keySet().size(); t ++) {
+        while(done.size() != notes.getFields().keySet().size()) {
             for (int i = 0; i < validTickets.get(0).size(); i++) {
                 if (!done.contains(i)) {
                     Set<String> remainingTypes = new HashSet<>(fieldTypes);
